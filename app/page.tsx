@@ -12,6 +12,7 @@ import { LogoTimeline } from '@/components/logo-timeline'
 import { Map } from '@/components/map'
 // import { Navbar } from '@/components/navbar'
 import { Screenshot } from '@/components/screenshot'
+import { FAQ } from '@/components/faq'
 import { Testimonials } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
@@ -111,7 +112,7 @@ function BentoSection() {
 					description='Transform insights into action. Receive specific, prioritized suggestions for improvements based on visitor behavior patterns and proven conversion principles.'
 					graphic={
 						<div className='flex size-full pl-10 pt-10'>
-							<Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
+							<Keyboard highlighted={['F', 'A', 'S', 'T']} />
 						</div>
 					}
 					className='lg:col-span-2 lg:rounded-bl-4xl'
@@ -120,13 +121,15 @@ function BentoSection() {
 					eyebrow='Source'
 					title='Find Quick Wins Fast'
 					description='Stop spending hours analyzing heatmaps. HeatSage automatically identifies your biggest opportunities for improvement, focusing on changes that deliver the highest impact with minimal effort.'
-					graphic={<LogoCluster />}
+					graphic={
+						<div className='absolute inset-0 bg-[url(/screenshots/fast.png)] bg-[size:1100px_650px] bg-[left_-320px_top_-73px] bg-no-repeat' />
+					}
 					className='lg:col-span-2'
 				/>
 				<BentoCard
-					eyebrow='Limitless'
-					title='Sell globally'
-					description='Radiant helps you sell in locations currently under international embargo.'
+					eyebrow='Easy Start'
+					title='No Experience Needed'
+					description='Get started in minutes with our intuitive interface. No advanced skills or analytics expertise required - just connect your site and let HeatSage do the work.'
 					graphic={<Map />}
 					className='max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl'
 				/>
@@ -147,37 +150,41 @@ function DarkBentoSection() {
 				<div className='mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2'>
 					<BentoCard
 						dark
-						eyebrow='Networking'
+						eyebrow='Installation'
 						title=' Quick Extension Setup'
-						description="Our RadiantAI chat assistants analyze the sentiment of your conversations in real time, ensuring you're always one step ahead."
+						description="Install our lightweight Chrome extension. That's all you need – no complex integrations or code changes required."
 						graphic={
-							<div className='h-80 bg-[url(/screenshots/networking.png)] bg-[size:851px_344px] bg-no-repeat' />
+							<div className='h-80 bg-[url(/screenshots/networking.png)] bg-[size:cover] bg-center bg-no-repeat' />
 						}
 						fade={['top']}
 						className='max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl'
 					/>
 					<BentoCard
 						dark
-						eyebrow='Integrations'
+						eyebrow='Connect'
 						title='Access Your Heatmaps'
-						description='With thousands of integrations, no one will be able to escape your cold outreach.'
-						graphic={<LogoTimeline />}
+						description="Open any page where you have heatmaps from your existing analytics tools. HeatSage's toolbar appears automatically."
+						graphic={
+							<div className='h-80 bg-[url(/screenshots/connect.png)] bg-[size:cover] bg-center bg-no-repeat' />
+						}
 						// `!overflow-visible` is needed to work around a Chrome bug that disables the mask on the graphic.
 						className='z-10 !overflow-visible lg:col-span-2 lg:rounded-tr-4xl'
 					/>
 					<BentoCard
 						dark
-						eyebrow='Meetings'
+						eyebrow='Analyze'
 						title='Select & Analyze'
-						description="Automatically insert intro calls into your leads' calendars without their consent."
-						graphic={<LinkedAvatars />}
+						description='Click to activate the heatmap you want to analyze. Our AI engine starts processing your visitor behavior patterns instantly.'
+						graphic={
+							<div className='h-80 bg-[url(/screenshots/analys.png)] bg-[size:cover] bg-center bg-no-repeat' />
+						}
 						className='lg:col-span-2 lg:rounded-bl-4xl'
 					/>
 					<BentoCard
 						dark
-						eyebrow='Engagement'
+						eyebrow='Results'
 						title='Get Actionable Insights'
-						description='RadiantAI automatically writes LinkedIn posts that relate current events to B2B sales, helping you build a reputation as a thought leader.'
+						description='Watch as HeatSage transforms complex heatmap data into clear, actionable recommendations for your landing page.'
 						graphic={
 							<div className='h-80 bg-[url(/screenshots/engagement.png)] bg-[size:851px_344px] bg-no-repeat' />
 						}
@@ -195,16 +202,17 @@ export default function Home() {
 		<div className='overflow-hidden'>
 			<Hero />
 			<main>
-				<Container className='mt-10'>
+				{/* <Container className='mt-10'>
 					<LogoCloud />
-				</Container>
+				</Container> */}
 				<div className='bg-gradient-to-b from-white from-50% to-gray-100 py-32'>
 					{/* <FeatureSection /> */}
 					<BentoSection />
 				</div>
 				<DarkBentoSection />
 			</main>
-			<Testimonials />
+			<FAQ />
+			{/* <Testimonials /> */}
 			<Footer />
 		</div>
 	)
