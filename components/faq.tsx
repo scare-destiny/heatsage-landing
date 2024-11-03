@@ -7,11 +7,17 @@ import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 
 const faqs = [
 	{
-		question: "What's the best thing about Switzerland?",
-		answer:
-			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+		question: "Does it require any other analytical tools?",
+		answer: "No, HeatSage works seamlessly on top of your existing analytics tools. We designed it to enhance and complement your current setup without requiring any replacements.",
 	},
-	// More questions...
+	{
+		question: "Is it free?",
+		answer: "Yes, HeatSage is currently free to use while we're in our early access phase. We believe in providing value first and getting your feedback to build the best possible product.",
+	},
+	{
+		question: "What are the future plans?",
+		answer: "Our focus is on gathering active user feedback and continuously improving the product. We're iterating based on real user needs to ensure HeatSage delivers maximum value for optimizing conversion rates.",
+	}
 ]
 
 export function FAQ() {

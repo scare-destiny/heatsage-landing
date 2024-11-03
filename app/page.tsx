@@ -186,7 +186,7 @@ function DarkBentoSection() {
 						title='Get Actionable Insights'
 						description='Watch as HeatSage transforms complex heatmap data into clear, actionable recommendations for your landing page.'
 						graphic={
-							<div className='h-80 bg-[url(/screenshots/engagement.png)] bg-[size:851px_344px] bg-no-repeat' />
+							<div className='h-80 bg-[url(/screenshots/final.png)] bg-[size:cover] bg-no-repeat' />
 						}
 						fade={['top']}
 						className='max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl'
