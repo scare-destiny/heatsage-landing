@@ -141,14 +141,14 @@ function DarkBentoSection() {
 			<Container>
 				<Subheading dark>Outreach</Subheading>
 				<Heading as='h3' dark className='mt-2 max-w-3xl'>
-					Customer outreach has never been easier.
+					How it works
 				</Heading>
 
 				<div className='mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2'>
 					<BentoCard
 						dark
 						eyebrow='Networking'
-						title='Sell at the speed of light'
+						title=' Quick Extension Setup'
 						description="Our RadiantAI chat assistants analyze the sentiment of your conversations in real time, ensuring you're always one step ahead."
 						graphic={
 							<div className='h-80 bg-[url(/screenshots/networking.png)] bg-[size:851px_344px] bg-no-repeat' />
@@ -159,7 +159,7 @@ function DarkBentoSection() {
 					<BentoCard
 						dark
 						eyebrow='Integrations'
-						title='Meet leads where they are'
+						title='Access Your Heatmaps'
 						description='With thousands of integrations, no one will be able to escape your cold outreach.'
 						graphic={<LogoTimeline />}
 						// `!overflow-visible` is needed to work around a Chrome bug that disables the mask on the graphic.
@@ -168,7 +168,7 @@ function DarkBentoSection() {
 					<BentoCard
 						dark
 						eyebrow='Meetings'
-						title='Smart call scheduling'
+						title='Select & Analyze'
 						description="Automatically insert intro calls into your leads' calendars without their consent."
 						graphic={<LinkedAvatars />}
 						className='lg:col-span-2 lg:rounded-bl-4xl'
@@ -176,7 +176,7 @@ function DarkBentoSection() {
 					<BentoCard
 						dark
 						eyebrow='Engagement'
-						title='Become a thought leader'
+						title='Get Actionable Insights'
 						description='RadiantAI automatically writes LinkedIn posts that relate current events to B2B sales, helping you build a reputation as a thought leader.'
 						graphic={
 							<div className='h-80 bg-[url(/screenshots/engagement.png)] bg-[size:851px_344px] bg-no-repeat' />
