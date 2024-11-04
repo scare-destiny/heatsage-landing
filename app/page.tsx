@@ -80,7 +80,7 @@ function FeatureSection() {
 function BentoSection() {
 	return (
 		<Container>
-			<Subheading>Sales</Subheading>
+			<Subheading>What You Get</Subheading>
 			<Heading as='h3' className='mt-2 max-w-3xl'>
 				Benefits
 			</Heading>
@@ -107,7 +107,7 @@ function BentoSection() {
 					className='lg:col-span-3 lg:rounded-tr-4xl'
 				/>
 				<BentoCard
-					eyebrow='Speed'
+					eyebrow='Actionable'
 					title='Smart Recommendations'
 					description='Transform insights into action. Receive specific, prioritized suggestions for improvements based on visitor behavior patterns and proven conversion principles.'
 					graphic={
@@ -118,7 +118,7 @@ function BentoSection() {
 					className='lg:col-span-2 lg:rounded-bl-4xl'
 				/>
 				<BentoCard
-					eyebrow='Source'
+					eyebrow='Fast'
 					title='Find Quick Wins Fast'
 					description='Stop spending hours analyzing heatmaps. HeatSage automatically identifies your biggest opportunities for improvement, focusing on changes that deliver the highest impact with minimal effort.'
 					graphic={
